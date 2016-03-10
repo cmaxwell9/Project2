@@ -24,7 +24,6 @@ public class PriList {
         try { x = ((int) Double.parseDouble(userInput));}
         catch(NumberFormatException nfe){
             System.out.println("Pri must be between 1,2,3,4, or 5");
-
             userInput = "6";};
         task1.Pri = x;
         Tasks.add(task1);
@@ -89,7 +88,7 @@ public class PriList {
     }
 
     static String list(){
-        for (int x = 0; x< 100; x++) {
+        for (int x = 0; x< Tasks.size(); x++) {
 
             if (x < Tasks.size()) {
                 Task contact1 = Tasks.get(x);
@@ -116,7 +115,7 @@ public class PriList {
         }
         ;
         int y = 0;
-        for (y = 0; y < 100; y++) {
+        for (y = 0; y < Tasks.size(); y++) {
             {
                 if (y < Tasks.size()) {
                     Task contact1 = Tasks.get(y);

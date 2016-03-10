@@ -32,8 +32,8 @@ package com.cmax;
                         PriList.remove();
                         break;
 
-                case 3:
-                    PriList.update();
+                    case 3:
+                        PriList.update();
                     break;
 
                     case 4:
